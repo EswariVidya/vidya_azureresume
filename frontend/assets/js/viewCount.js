@@ -10,9 +10,9 @@ const displayCount = () => {
     }).then(response => {
         console.log("Website called function API");
         count = response.count;
-        document.getElementById("jsViewCount").innerHTML = count;
+        document.getElementById("jsViewCount").innerText = count;
     }).catch(function(error){
         console.log(error);
-    })
-}
+    });
 return count;
+}
